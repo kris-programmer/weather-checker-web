@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', Arial, sans-serif;
+    background: linear-gradient(135deg, #e0e7ff 0%, #f8fafc 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+h1 {
+    margin-top: 3vh;
+    font-size: 2.5rem;
+    color: #1e293b;
+    letter-spacing: 1px;
+    font-weight: 700;
+    font-style: italic;
+}
+
+#search {
+    display: flex;
+    gap: 1rem;
+    margin: 2rem 0;
+    padding: 1.5rem 2rem;
+    border-radius: 1.5rem;
+    background: #fff;
+    box-shadow: 0 4px 24px rgba(30, 41, 59, 0.08);
+    border: black 1px solid;
+    align-items: center;
+}
+
+#location-input {
+    padding: 0.7rem 1rem;
+    border-radius: 0.8rem;
+    border: 1px solid #cbd5e1;
+    font-size: 1.1rem;
+    outline: none;
+    transition: border 0.2s;
+    background: #f1f5f9;
+}
+
+#location-input:focus {
+    border: 1.5px solid #6366f1;
+    background: #fff;
+}
+
+#weather-check-button {
+    padding: 0.7rem 1.5rem;
+    border-radius: 0.8rem;
+    border: 0.5px black solid;
+    background: linear-gradient(90deg, #6366f1 0%, #0ea5e9 100%);
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: 700;
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(99, 102, 241, 0.08);
+    transition: background 2s ease, transform 0.1s ease;
+}
+
+#weather-check-button:hover {
+    background: linear-gradient(90deg, #0ea5e9 0%, #6366f1 100%);
+    transform: scale(1.03);
+}
+
+#weather-check-button:active {
+    transform: scale(1.05);
+}
+
+#results {
+    margin-top: 2rem;
+    width: 100%;
+    max-width: 420px;
+    min-height: 180px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.label-title {
+    color: #2563eb;
+}
+
+.current-weather {
+    background: #fff;
+    border-radius: 1.5rem;
+    box-shadow: 0 4px 24px rgba(30, 41, 59, 0.10);
+    padding: 2rem 2.5rem;
+    width: 100%;
+    text-align: center;
+    animation: fadeIn 0.7s;
+}
+
+.current-weather h2 {
+    text-align: left;
+    margin-bottom: 1.2rem;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.current-weather label {
+    display: block;
+    margin: 0.5rem 0;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px);}
+    to { opacity: 1; transform: translateY(0);}
+}

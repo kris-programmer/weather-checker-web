@@ -112,3 +112,22 @@ h1 {
     from { opacity: 0; transform: translateY(20px);}
     to { opacity: 1; transform: translateY(0);}
 }
+
+#future-panel h3{
+    margin-top: 2em;
+    text-align: center;
+}
+.future-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+.future-table th, .future-table td {
+  border: 1px solid #ccc;
+  padding: 0.4em 0.7em;
+  text-align: center;
+}
+.future-table th {
+  background-color: #f0f0f0;
+}

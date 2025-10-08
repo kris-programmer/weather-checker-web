@@ -6,9 +6,9 @@
 }
 
 body {
-    min-height: 100vh;
     margin: 0;
     padding: 0;
+    min-height: 100vh;
     font-family: 'Roboto', Arial, sans-serif;
     background: linear-gradient(135deg, #e0e7ff 0%, #f8fafc 100%);
     display: flex;
@@ -43,8 +43,8 @@ h1 {
     display: flex;
     justify-content: center;
     gap: 1rem;
-    margin: 2rem 0;
-    padding: 1.5rem 2rem;
+    margin: 1rem 0;
+    padding: 1rem 1rem;
     border-radius: 1.5rem;
     background: #fff;
     box-shadow: 0 4px 24px rgba(30, 41, 59, 0.08);
@@ -68,12 +68,12 @@ h1 {
 }
 
 #weather-check-button {
-    padding: 0.7rem 1.3rem;
+    padding: 0.7rem 0.8rem;
     border-radius: 0.8rem;
     border: 0.5px black solid;
     background: linear-gradient(90deg, #6366f1 0%, #0ea5e9 100%);
     color: #fff;
-    font-size: 1.1rem;
+    font-size: 1rem;
     font-weight: 700;
     cursor: pointer;
     box-shadow: 0 2px 8px rgba(99, 102, 241, 0.08);
@@ -106,7 +106,7 @@ h1 {
     background: #fff;
     border-radius: 1.5rem;
     box-shadow: 0 4px 24px rgba(30, 41, 59, 0.10);
-    padding: 2rem 2.5rem;
+    padding: 1rem 1rem;
     text-align: center;
     animation: fadeIn 0.7s;
 }
@@ -133,26 +133,30 @@ h1 {
 .future-table {
     border-collapse: separate;
     border-spacing: 0;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
+    margin: 1rem 0;
     background: #fff;
-    border-radius: 1.2rem;
+    border-radius: 1rem;
     box-shadow: 0 4px 24px rgba(30, 41, 59, 0.10);
-    overflow: hidden;
-    font-size: 1.05rem;
+    font-size: 1rem;
     animation: fadeIn 0.7s;
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+    table-layout: auto;
+    word-wrap: break-word;
 }
 
 .future-table th, .future-table td {
     border: none;
-    padding: 0.7rem 1.1rem;
+    padding: 1rem 1rem;
     text-align: center;
+    white-space: nowrap;
 }
 
 .future-table th {
     color: #2563eb;
     font-weight: 700;
-    font-size: 1.1rem;
+    font-size: 1rem;
     letter-spacing: 0.5px;
 }
 
@@ -166,9 +170,9 @@ h1 {
 }
 
 #future-panel h3 {
-    margin-top: 2rem;
+    margin-top: 1rem;
     text-align: center;
-    font-size: 1.3rem;
+    font-size: 1rem;
     font-weight: 700;
     letter-spacing: 0.5px;
 }
@@ -192,7 +196,13 @@ h1 {
     }
 
     .future-table {
-        width: 100%;
+        display: table;
+        table-layout: auto;
+        overflow-x: visible;
+    }
+
+    .future-table th, .future-table td {
+        white-space: normal; /* allows content to wrap naturally */
     }
 }
 

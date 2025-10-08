@@ -16,4 +16,6 @@ Users can input any location to get immediate weather details, including current
 
 🕒 24-Hour Timeline — Shows weather data for the whole day.
 
+📱 Responsive Design — Fully responsive layout that adapts seamlessly to mobile, tablet, and desktop screens for a smooth user experience on any device.
+
 Try it out here: https://kris-programmer.github.io/weather-checker-web/

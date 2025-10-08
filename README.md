@@ -11,7 +11,9 @@ Users can input any location to get immediate weather details, including current
 ✨ Features
 
 🌍 Location Search — Users can enter a location to fetch its weather data.
+
 🌡 Current Weather — Displays temperature, wind speed, chance of rain, and general conditions (e.g., Sunny, Cloudy, Raining).
+
 🕒 24-Hour Timeline — Shows weather data for the whole day.
 
 Try it out here: https://kris-programmer.github.io/weather-checker-web/
